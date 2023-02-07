@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<TextView-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:id="@+id/tv_title"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:drawableTop="@drawable/ic_clear_night"-->
+<!--    android:drawablePadding="3dp"-->
+<!--    android:textColor="@color/white"-->
+<!--    android:textSize="15dp"-->
+<!--    android:text="Example"/>-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/tv_img"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_clear_night"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dot_grey"
+        android:textSize="13dp"
+        android:text="TextView"/>
+    <TextView
+        android:id="@+id/tv_blank"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:visibility="invisible"
+        android:textSize="13dp"
+        android:text="TextView"/>
+</LinearLayout>

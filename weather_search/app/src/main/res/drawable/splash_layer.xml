@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@color/black"></item>
+    <item>
+        <bitmap android:src="@drawable/rainy1"
+            android:gravity="center">
+        </bitmap>
+    </item>
+    <item android:bottom="100dp"
+        android:width="220dp"
+        android:left="90dp">
+        <bitmap android:src="@drawable/tomorrow"
+            android:gravity="bottom|fill_horizontal"
+            android:dither="true">
+        </bitmap>
+    </item>
+</layer-list>

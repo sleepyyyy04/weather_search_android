@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodayFragment">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        app:columnCount="3"
+        app:orientation="horizontal"
+        app:rowCount="3">
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="0">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/weather_windy"></ImageView>
+
+            <TextView
+                android:id="@+id/today_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 mph"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wind Speed"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:textSize="19dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="0">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/gauge"></ImageView>
+
+            <TextView
+                android:id="@+id/today_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00.00 inHg"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pressure"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:paddingBottom="10dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_row="0">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/weather_pouring"></ImageView>
+
+            <TextView
+                android:id="@+id/today_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 %"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Precipitation"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:paddingBottom="10dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/thermometer"></ImageView>
+
+            <TextView
+                android:id="@+id/today_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00°F"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Temperature"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:textSize="19dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="1">
+
+            <ImageView
+                android:id="@+id/td_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_mostly_clear_night"></ImageView>
+
+            <TextView
+                android:id="@+id/today_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clouee"
+                android:paddingBottom="15dp"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_row="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/water_percent"></ImageView>
+
+            <TextView
+                android:id="@+id/today_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00 %"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Humidity"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:paddingBottom="10dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="0"
+            app:layout_row="2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/eye_outline"></ImageView>
+
+            <TextView
+                android:id="@+id/today_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 mi"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Visibility"
+                android:textColor="@color/white"
+                android:textSize="19dp"
+                android:paddingBottom="10dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="1"
+            app:layout_row="2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/weather_fog"></ImageView>
+
+            <TextView
+                android:id="@+id/today_8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00%"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cloud Cover"
+                android:textColor="@color/white"
+                android:paddingBottom="10dp"
+                android:textSize="19dp"></TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="160dp"
+            android:layout_marginVertical="5dp"
+            android:background="@color/card_grey"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_column="2"
+            app:layout_row="2">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:src="@drawable/earth"></ImageView>
+
+            <TextView
+                android:id="@+id/today_9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.00"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ozone"
+                android:paddingBottom="10dp"
+                android:textColor="@color/white"
+                android:textSize="19dp"></TextView>
+
+        </LinearLayout>
+
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</FrameLayout>
